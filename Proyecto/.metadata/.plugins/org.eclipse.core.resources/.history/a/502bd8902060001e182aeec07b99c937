@@ -1,0 +1,14 @@
+package cibertec;
+
+import javax.swing.JPanel;
+
+public class ListarCerámico extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public ListarCerámico() {
+
+	}
+
+}
