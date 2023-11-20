@@ -1,6 +1,0 @@
-INDEX VERSION 1.131+D:\Program Files\IDLEs\eclipse\Proyectos\Donacion_Johnny_Nestor_Jair_Ramos_Paucar\.metadata\.plugins\org.eclipse.jdt.core
-207018254.index
-1335331491.index
-303101301.index
-3988639243.index
-263265558.index
