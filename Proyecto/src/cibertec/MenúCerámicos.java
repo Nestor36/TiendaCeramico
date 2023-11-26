@@ -93,6 +93,8 @@ public class MenúCerámicos extends JFrame implements ActionListener {
     public static double aporteACuotaDiaria3;
     public static double aporteACuotaDiaria4;
     
+    
+    // para poder obtener el promedio de los precios para "Ventas/GenerarReportes" en la pestaña de estadisticas.
     public static double precioProm=(precio0+precio1+precio2+precio3+precio4)/5;
     
     private JMenuItem mntmSalir;
@@ -221,9 +223,9 @@ public class MenúCerámicos extends JFrame implements ActionListener {
         contentPane.setLayout(null);
     }
 
-    public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == mntmAcerdadetienda) {
-            actionPerformedMntmAcerdadetienda(e);
+    public void actionPerformed(ActionEvent e) { // eventos para uso de interacción
+        if (e.getSource() == mntmAcerdadetienda) { // comprobar sí e.getSource() es igual al objeto mntmAcercadadetienda
+            actionPerformedMntmAcerdadetienda(e); // se le pasa el evento "e" a actionPerfomedMntmAcercadadetienda para poder manejar las acciones luego de la interacción.
         }
         if (e.getSource() == mntmConfigurarcuotadiaria) {
             actionPerformedMntmConfigurarcuotadiaria(e);
@@ -257,18 +259,28 @@ public class MenúCerámicos extends JFrame implements ActionListener {
         }
     }
 
-    protected void actionPerformedMntmSalir(ActionEvent e) {
+    protected void actionPerformedMntmSalir(ActionEvent e) { // Acción del Salir
         
-        if (JOptionPane.showConfirmDialog(this, "¿Está seguro que desea salir?", "Salir", 
-                JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
-            System.exit(0);
+    	// Importamos esto "import javax.swing.JOptionPane;" para poder utilizar la función de JOptionPane.showConfirmDialog
+    	/*
+    	    OptionPane.showConfirmDialog(Component parentComponent, -- Componente sobre el que se abre el cuadro de diálogo (this para el componente actual)
+			Object message, -- El mensaje
+			String title, -- Titulo
+			int optionType, -- OK_CANCEL_OPTION(Botones Aceptar y Cancelar), CLOSED_OPTION(Botón Aceptar), YES_NO_OPTION(Botones Sí y No), YES_NO_CANCEL_OPTION(Botones Sí, No y Cancelar)
+			int messageType, -- optional INFORMATION_MESSAGE. Icono de información. WARNING_MESSAGE. Icono de advertencia.ERROR_MESSAGE. Icono de error QUESTION_MESSAGE. Icono de pregunta. PLAIN_MESSAGE. Sin icono DEFAULT_OPTION. Sin icono.
+			Icon icon);     -- optional Url del icono (necesario estar dentro del package)
+    	 * 
+    	 * */
+    	
+        if (JOptionPane.showConfirmDialog(this, "¿Está seguro que desea salir?", "Salir",JOptionPane.YES_OPTION) == JOptionPane.YES_OPTION) {
+            System.exit(0); // Para poder cerrar la aplicación completamente
         }
     }
 
-    protected void actionPerformedMntmConsultarceramico(ActionEvent e) {
-        ConsultarCerámico d = new ConsultarCerámico();
-        d.setLocationRelativeTo(mntmConsultarceramico);
-        d.setVisible(true);
+    protected void actionPerformedMntmConsultarceramico(ActionEvent e) { // la acción de apertura de ventana
+        ConsultarCerámico d = new ConsultarCerámico(); // se inicia la instancia y se le asigna a la variable "d"
+        d.setLocationRelativeTo(mntmConsultarceramico); // para ubicar la ventana de otro componente "mntmConsultarceramico"
+        d.setVisible(true); // poder hacer visible la ventana ubicada de "mntmConsultarceramico"
     }
 
     protected void actionPerformedMntmModificarceramico(ActionEvent e) {
