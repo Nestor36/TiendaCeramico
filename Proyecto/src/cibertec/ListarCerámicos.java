@@ -45,13 +45,13 @@ public class ListarCerámicos extends JDialog implements ActionListener {
         btnListar = new JButton("Listar");
         btnListar.addActionListener(this);
         btnListar.setBounds(208, 438, 94, 23);
-        btnListar.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        btnListar.setFont(new Font("arial", Font.PLAIN, 12));
         contentPanel.add(btnListar);
 
         btnCerrar = new JButton("Cerrar");
         btnCerrar.addActionListener(this);
         btnCerrar.setBounds(312, 438, 84, 23);
-        btnCerrar.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        btnCerrar.setFont(new Font("arial", Font.PLAIN, 12));
         contentPanel.add(btnCerrar);
 
         scp = new JScrollPane();
@@ -59,47 +59,27 @@ public class ListarCerámicos extends JDialog implements ActionListener {
         contentPanel.add(scp);
 
         txtS = new JTextArea();
-        txtS.setFont(new Font("Monospaced", Font.PLAIN, 14));
+        txtS.setFont(new Font("arial", Font.PLAIN, 14));
         scp.setViewportView(txtS);
     }
 
+    void imprimirCeramico(String modelo,double precio, double ancho, double largo, double espesor, int contenido) {
+    	txtS.append("\n");
+        txtS.append("Modelo \t: " + modelo + "\n");
+        txtS.append("Precio \t: " + precio  + "\n");
+        txtS.append("Ancho(cm)\t: " + ancho + "\n");
+        txtS.append("Largo(cm)\t: " + largo + "\n");
+        txtS.append("Espesor(cm) \t: " + espesor + "\n");
+        txtS.append("Contenido \t: " + contenido + "\n");
+   }
+    
     void mostrarResultados() {
-        txtS.setText("LISTADO DE CER�?MICOS" + "\n");
-        imprimir("\n");
-        imprimir("Modelo \t: " + MenúCerámicos.modelo0 + "\n");
-        imprimir("Precio \t: " + MenúCerámicos.precio0 + "\n");
-        imprimir("Ancho(cm)\t: " + MenúCerámicos.ancho0 + "\n");
-        imprimir("Largo(cm)\t: " + MenúCerámicos.largo0 + "\n");
-        imprimir("Espesor(cm) \t: " + MenúCerámicos.espesor0 + "\n");
-        imprimir("Contenido \t: " + MenúCerámicos.contenido0 + "\n");
-        imprimir("\n");
-        imprimir("Modelo \t: " + MenúCerámicos.modelo1 + "\n");
-        imprimir("Precio \t: " + MenúCerámicos.precio1 + "\n");
-        imprimir("Ancho(cm)\t: " + MenúCerámicos.ancho1 + "\n");
-        imprimir("Largo(cm)\t: " + MenúCerámicos.largo1 + "\n");
-        imprimir("Espesor(cm) \t: " + MenúCerámicos.espesor1 + "\n");
-        imprimir("Contenido \t: " + MenúCerámicos.contenido1 + "\n");
-        imprimir("\n");
-        imprimir("Modelo \t: " + MenúCerámicos.modelo2 + "\n");
-        imprimir("Precio \t: " + MenúCerámicos.precio2 + "\n");
-        imprimir("Ancho(cm)\t: " + MenúCerámicos.ancho2 + "\n");
-        imprimir("Largo(cm)\t: " + MenúCerámicos.largo2 + "\n");
-        imprimir("Espesor(cm) \t: " + MenúCerámicos.espesor2 + "\n");
-        imprimir("Contenido \t: " + MenúCerámicos.contenido2 + "\n");
-        imprimir("\n");
-        imprimir("Modelo \t: " + MenúCerámicos.modelo3 + "\n");
-        imprimir("Precio \t: " + MenúCerámicos.precio3 + "\n");
-        imprimir("Ancho(cm)\t: " + MenúCerámicos.ancho3 + "\n");
-        imprimir("Largo(cm)\t: " + MenúCerámicos.largo3 + "\n");
-        imprimir("Espesor(cm) \t: " + MenúCerámicos.espesor3 + "\n");
-        imprimir("Contenido \t: " + MenúCerámicos.contenido3 + "\n");
-        imprimir("\n");
-        imprimir("Modelo \t: " + MenúCerámicos.modelo4 + "\n");
-        imprimir("Precio \t: " + MenúCerámicos.precio4 + "\n");
-        imprimir("Ancho(cm)\t: " + MenúCerámicos.ancho4 + "\n");
-        imprimir("Largo(cm)\t: " + MenúCerámicos.largo4 + "\n");
-        imprimir("Espesor(cm) \t: " + MenúCerámicos.espesor4 + "\n");
-        imprimir("Contenido \t: " + MenúCerámicos.contenido4 + "\n");
+        txtS.setText("LISTADO DE CERÁMICOS" + "\n");
+        imprimirCeramico(MenúCerámicos.modelo0, MenúCerámicos.precio0, MenúCerámicos.ancho0, MenúCerámicos.largo0,  MenúCerámicos.espesor0 , MenúCerámicos.contenido0);
+        imprimirCeramico(MenúCerámicos.modelo1, MenúCerámicos.precio1, MenúCerámicos.ancho1, MenúCerámicos.largo1,  MenúCerámicos.espesor1 , MenúCerámicos.contenido1);
+        imprimirCeramico(MenúCerámicos.modelo2, MenúCerámicos.precio2, MenúCerámicos.ancho2, MenúCerámicos.largo2,  MenúCerámicos.espesor2 , MenúCerámicos.contenido2);
+        imprimirCeramico(MenúCerámicos.modelo3, MenúCerámicos.precio3, MenúCerámicos.ancho3, MenúCerámicos.largo3,  MenúCerámicos.espesor3 , MenúCerámicos.contenido3);
+        imprimirCeramico(MenúCerámicos.modelo4, MenúCerámicos.precio4, MenúCerámicos.ancho4, MenúCerámicos.largo4,  MenúCerámicos.espesor4 , MenúCerámicos.contenido4);
     }
 
     public void actionPerformed(ActionEvent e) {
@@ -112,7 +92,7 @@ public class ListarCerámicos extends JDialog implements ActionListener {
     }
 
     protected void actionPerformedBtnListar(ActionEvent e) {
-        mostrarResultados();
+        mostrarResultados(); // llamando al método mostrarResultados();
     }
 
     protected void actionPerformedBtnCerrar(ActionEvent e) {

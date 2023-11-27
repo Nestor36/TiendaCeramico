@@ -27,16 +27,16 @@ public class ConfigurarCantidadOptima extends JDialog implements ActionListener 
 
     public ConfigurarCantidadOptima() {
         setTitle("Configurar cantidad óptima");
-        setBounds(100, 100, 450, 126);
+        setBounds(100, 100, 401, 142);
         getContentPane().setLayout(null);
 
         JLabel lblCantidadOptima = new JLabel("Cantidad óptima de unidades vendidas");
-        lblCantidadOptima.setBounds(29, 20, 279, 18);
-        lblCantidadOptima.setFont(new Font("Garamond", Font.PLAIN, 13));
+        lblCantidadOptima.setBounds(10, 16, 247, 38);
+        lblCantidadOptima.setFont(new Font("Arial", Font.PLAIN, 13));
         getContentPane().add(lblCantidadOptima);
 
         txtCantidadOptima = new JTextField();
-        txtCantidadOptima.setBounds(96, 49, 96, 19);
+        txtCantidadOptima.setBounds(31, 57, 196, 25);
         txtCantidadOptima.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
             }
@@ -49,14 +49,14 @@ public class ConfigurarCantidadOptima extends JDialog implements ActionListener 
 
         btnAceptar = new JButton("Aceptar");
         btnAceptar.addActionListener(this);
-        btnAceptar.setBounds(281, 18, 102, 21);
-        btnAceptar.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        btnAceptar.setBounds(267, 20, 101, 30);
+        btnAceptar.setFont(new Font("Arial", Font.PLAIN, 11));
         getContentPane().add(btnAceptar);
 
         btnCancelar = new JButton("Cancelar");
         btnCancelar.addActionListener(this);
-        btnCancelar.setBounds(281, 48, 102, 21);
-        btnCancelar.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        btnCancelar.setBounds(267, 55, 101, 30);
+        btnCancelar.setFont(new Font("Arial", Font.PLAIN, 11));
         getContentPane().add(btnCancelar);
 
     }

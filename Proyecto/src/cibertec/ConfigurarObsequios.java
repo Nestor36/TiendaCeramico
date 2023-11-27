@@ -39,52 +39,52 @@ public class ConfigurarObsequios extends JDialog implements ActionListener {
 
         {
             JLabel lblTipodeobsequio = new JLabel("Tipo de obsequio");
-            lblTipodeobsequio.setFont(new Font("Monospaced", Font.PLAIN, 12));
+            lblTipodeobsequio.setFont(new Font("arial", Font.PLAIN, 12));
             lblTipodeobsequio.setBounds(10, 20, 130, 31);
             getContentPane().add(lblTipodeobsequio);
         }
         {
             JLabel lbl1a5unidades = new JLabel("1 a 5 unidades");
-            lbl1a5unidades.setFont(new Font("Monospaced", Font.PLAIN, 12));
+            lbl1a5unidades.setFont(new Font("arial", Font.PLAIN, 12));
             lbl1a5unidades.setBounds(10, 45, 130, 31);
             getContentPane().add(lbl1a5unidades);
         }
         {
             JLabel lbl6a10unidades = new JLabel("6 a 10 unidades");
-            lbl6a10unidades.setFont(new Font("Monospaced", Font.PLAIN, 12));
+            lbl6a10unidades.setFont(new Font("arial", Font.PLAIN, 12));
             lbl6a10unidades.setBounds(10, 74, 130, 31);
             getContentPane().add(lbl6a10unidades);
         }
         {
             JLabel lbl11amasunidades = new JLabel("11 a más unidades");
-            lbl11amasunidades.setFont(new Font("Monospaced", Font.PLAIN, 12));
+            lbl11amasunidades.setFont(new Font("arial", Font.PLAIN, 12));
             lbl11amasunidades.setBounds(10, 102, 130, 31);
             getContentPane().add(lbl11amasunidades);
         }
         {
             txtTipodeobsequio = new JTextField();
-            txtTipodeobsequio.setFont(new Font("Monospaced", Font.PLAIN, 12));
+            txtTipodeobsequio.setFont(new Font("arial", Font.PLAIN, 12));
             txtTipodeobsequio.setBounds(153, 24, 160, 19);
             getContentPane().add(txtTipodeobsequio);
             txtTipodeobsequio.setColumns(10);
         }
         {
             txt1a5 = new JTextField();
-            txt1a5.setFont(new Font("Monospaced", Font.PLAIN, 12));
+            txt1a5.setFont(new Font("arial", Font.PLAIN, 12));
             txt1a5.setColumns(10);
             txt1a5.setBounds(153, 49, 160, 19);
             getContentPane().add(txt1a5);
         }
         {
             txt6a10 = new JTextField();
-            txt6a10.setFont(new Font("Monospaced", Font.PLAIN, 12));
+            txt6a10.setFont(new Font("arial", Font.PLAIN, 12));
             txt6a10.setColumns(10);
             txt6a10.setBounds(153, 78, 160, 19);
             getContentPane().add(txt6a10);
         }
         {
             txt11amas = new JTextField();
-            txt11amas.setFont(new Font("Monospaced", Font.PLAIN, 12));
+            txt11amas.setFont(new Font("arial", Font.PLAIN, 12));
             txt11amas.setColumns(10);
             txt11amas.setBounds(153, 106, 160, 19);
             getContentPane().add(txt11amas);
@@ -98,14 +98,14 @@ public class ConfigurarObsequios extends JDialog implements ActionListener {
         {
             btnCancelar = new JButton("Cancelar");
             btnCancelar.addActionListener(this);
-            btnCancelar.setFont(new Font("Monospaced", Font.PLAIN, 12));
+            btnCancelar.setFont(new Font("arial", Font.PLAIN, 12));
             btnCancelar.setBounds(323, 48, 103, 24);
             getContentPane().add(btnCancelar);
         }
         {
             btnAceptar = new JButton("Aceptar");
             btnAceptar.addActionListener(this);
-            btnAceptar.setFont(new Font("Monospaced", Font.PLAIN, 12));
+            btnAceptar.setFont(new Font("arial", Font.PLAIN, 12));
             btnAceptar.setBounds(323, 23, 103, 24);
             getContentPane().add(btnAceptar);
         }

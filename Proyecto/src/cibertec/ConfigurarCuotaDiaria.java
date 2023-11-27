@@ -30,35 +30,35 @@ public class ConfigurarCuotaDiaria extends JDialog implements ActionListener {
 
     public ConfigurarCuotaDiaria() {
         setTitle("Configurar cuota diaria");
-        setBounds(100, 100, 450, 141);
+        setBounds(100, 100, 484, 141);
         getContentPane().setLayout(new BorderLayout());
         contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
         getContentPane().add(contentPanel, BorderLayout.CENTER);
         contentPanel.setLayout(null);
 
         lblCuota = new JLabel("Cuota diaria esperada (S/.)");
-        lblCuota.setFont(new Font("Garamond", Font.PLAIN, 14));
-        lblCuota.setBounds(10, 22, 162, 20);
+        lblCuota.setFont(new Font("Arial", Font.PLAIN, 14));
+        lblCuota.setBounds(21, 22, 187, 20);
         contentPanel.add(lblCuota);
 
         txtCuotaD = new JTextField();
-        txtCuotaD.setFont(new Font("Monospaced", Font.PLAIN, 12));
-        txtCuotaD.setBounds(182, 22, 108, 20);
+        txtCuotaD.setFont(new Font("Arial", Font.PLAIN, 12));
+        txtCuotaD.setBounds(213, 18, 108, 30);
         contentPanel.add(txtCuotaD);
         txtCuotaD.setColumns(10);
 
         btnAceptar = new JButton("Aceptar");
         btnAceptar.addActionListener(this);
-        btnAceptar.setFont(new Font("Monospaced", Font.PLAIN, 12));
-        btnAceptar.setBounds(324, 21, 89, 23);
+        btnAceptar.setFont(new Font("Arial", Font.PLAIN, 12));
+        btnAceptar.setBounds(357, 18, 89, 30);
         contentPanel.add(btnAceptar);
 
         txtCuotaD.setText(MenúCerámicos.cuotaDiaria + "");
 
         btnCancelar = new JButton("Cancelar");
         btnCancelar.addActionListener(this);
-        btnCancelar.setFont(new Font("Monospaced", Font.PLAIN, 12));
-        btnCancelar.setBounds(324, 55, 89, 23);
+        btnCancelar.setFont(new Font("Arial", Font.PLAIN, 12));
+        btnCancelar.setBounds(357, 56, 89, 30);
         contentPanel.add(btnCancelar);
     }
 

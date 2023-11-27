@@ -128,93 +128,93 @@ public class MenúCerámicos extends JFrame implements ActionListener {
         setBounds(100, 100, 646, 434);
 
         JMenuBar menuBar = new JMenuBar();
-        menuBar.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        menuBar.setFont(new Font("arial", Font.PLAIN, 12));
         setJMenuBar(menuBar);
 
         JMenu mnArchivo = new JMenu("Archivo");
-        mnArchivo.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        mnArchivo.setFont(new Font("arial", Font.PLAIN, 12));
         menuBar.add(mnArchivo);
 
         mntmSalir = new JMenuItem("Salir");
         mntmSalir.setIcon(new ImageIcon(MenúCerámicos.class.getResource("/Media/boton-x.png")));
         mntmSalir.addActionListener(this);
-        mntmSalir.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        mntmSalir.setFont(new Font("arial", Font.PLAIN, 12));
         mnArchivo.add(mntmSalir);
 
         JMenu mnMantenimiento = new JMenu("Mantenimiento");
-        mnMantenimiento.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        mnMantenimiento.setFont(new Font("arial", Font.PLAIN, 12));
         menuBar.add(mnMantenimiento);
 
         mntmConsultarceramico = new JMenuItem("Consultar cerámico");
         mntmConsultarceramico.setIcon(new ImageIcon(MenúCerámicos.class.getResource("/Media/consulta.png")));
         mntmConsultarceramico.addActionListener(this);
-        mntmConsultarceramico.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        mntmConsultarceramico.setFont(new Font("arial", Font.PLAIN, 12));
         mnMantenimiento.add(mntmConsultarceramico);
 
         mntmModificarceramico = new JMenuItem("Modificar cerámico");
         mntmModificarceramico.setIcon(new ImageIcon(MenúCerámicos.class.getResource("/Media/editar.png")));
         mntmModificarceramico.addActionListener(this);
-        mntmModificarceramico.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        mntmModificarceramico.setFont(new Font("arial", Font.PLAIN, 12));
         mnMantenimiento.add(mntmModificarceramico);
 
         mntmListarceramico = new JMenuItem("Listar cerámicos");
         mntmListarceramico.setIcon(new ImageIcon(MenúCerámicos.class.getResource("/Media/lista-de-verificacion.png")));
         mntmListarceramico.addActionListener(this);
-        mntmListarceramico.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        mntmListarceramico.setFont(new Font("arial", Font.PLAIN, 12));
         mnMantenimiento.add(mntmListarceramico);
 
         JMenu mnVentas = new JMenu("Ventas");
-        mnVentas.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        mnVentas.setFont(new Font("arial", Font.PLAIN, 12));
         menuBar.add(mnVentas);
 
         mntmVender = new JMenuItem("Vender");
         mntmVender.setIcon(new ImageIcon(MenúCerámicos.class.getResource("/Media/tienda.png")));
         mntmVender.addActionListener(this);
-        mntmVender.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        mntmVender.setFont(new Font("arial", Font.PLAIN, 12));
         mnVentas.add(mntmVender);
 
         mntmGenerarreportes = new JMenuItem("Generar reportes");
         mntmGenerarreportes.setIcon(new ImageIcon(MenúCerámicos.class.getResource("/Media/reporte-de-negocios.png")));
         mntmGenerarreportes.addActionListener(this);
-        mntmGenerarreportes.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        mntmGenerarreportes.setFont(new Font("arial", Font.PLAIN, 12));
         mnVentas.add(mntmGenerarreportes);
 
         JMenu mnConfiguracion = new JMenu("Configuración");
-        mnConfiguracion.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        mnConfiguracion.setFont(new Font("arial", Font.PLAIN, 12));
         menuBar.add(mnConfiguracion);
 
         mntmConfigurardescuentos = new JMenuItem("Configurar descuentos");
         mntmConfigurardescuentos.setIcon(new ImageIcon(MenúCerámicos.class.getResource("/Media/descuento.png")));
         mntmConfigurardescuentos.addActionListener(this);
-        mntmConfigurardescuentos.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        mntmConfigurardescuentos.setFont(new Font("arial", Font.PLAIN, 12));
         mnConfiguracion.add(mntmConfigurardescuentos);
 
         mntmConfigurarobsequios = new JMenuItem("Configurar obsequios");
         mntmConfigurarobsequios.setIcon(new ImageIcon(MenúCerámicos.class.getResource("/Media/obsequio.png")));
         mntmConfigurarobsequios.addActionListener(this);
-        mntmConfigurarobsequios.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        mntmConfigurarobsequios.setFont(new Font("arial", Font.PLAIN, 12));
         mnConfiguracion.add(mntmConfigurarobsequios);
 
         mntmConfigurarcantidadoptima = new JMenuItem("Configurar cantidad óptima");
         mntmConfigurarcantidadoptima.setIcon(new ImageIcon(MenúCerámicos.class.getResource("/Media/desbordamiento.png")));
         mntmConfigurarcantidadoptima.addActionListener(this);
-        mntmConfigurarcantidadoptima.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        mntmConfigurarcantidadoptima.setFont(new Font("arial", Font.PLAIN, 12));
         mnConfiguracion.add(mntmConfigurarcantidadoptima);
 
         mntmConfigurarcuotadiaria = new JMenuItem("Configurar cuota diaria");
         mntmConfigurarcuotadiaria.setIcon(new ImageIcon(MenúCerámicos.class.getResource("/Media/rutina.png")));
         mntmConfigurarcuotadiaria.addActionListener(this);
-        mntmConfigurarcuotadiaria.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        mntmConfigurarcuotadiaria.setFont(new Font("arial", Font.PLAIN, 12));
         mnConfiguracion.add(mntmConfigurarcuotadiaria);
 
         JMenu mnAyuda = new JMenu("Ayuda");
-        mnAyuda.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        mnAyuda.setFont(new Font("arial", Font.PLAIN, 12));
         menuBar.add(mnAyuda);
 
         mntmAcerdadetienda = new JMenuItem("Acerca de Tienda");
         mntmAcerdadetienda.setIcon(new ImageIcon(MenúCerámicos.class.getResource("/Media/pregunta.png")));
         mntmAcerdadetienda.addActionListener(this);
-        mntmAcerdadetienda.setFont(new Font("Monospaced", Font.PLAIN, 12));
+        mntmAcerdadetienda.setFont(new Font("arial", Font.PLAIN, 12));
         mnAyuda.add(mntmAcerdadetienda);
 
         contentPane = new JPanel();

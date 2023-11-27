@@ -26,38 +26,38 @@ public class AcercaDeTienda extends JDialog implements ActionListener {
 
     public AcercaDeTienda() {
         setTitle("Acerca de Tienda");
-        setBounds(100, 100, 360, 335);
+        setBounds(100, 100, 475, 335);
         getContentPane().setLayout(null);
 
         JLabel lblJesusChavez = new JLabel("Johnny Nestor Jair Ramos Paucar (i202334672) ");
         lblJesusChavez.setFont(new Font("Garamond", Font.PLAIN, 16));
-        lblJesusChavez.setBounds(21, 71, 328, 26);
+        lblJesusChavez.setBounds(77, 91, 304, 26);
         getContentPane().add(lblJesusChavez);
 
         JLabel lblAutores = new JLabel("Autores");
         lblAutores.setFont(new Font("Garamond", Font.PLAIN, 27));
-        lblAutores.setBounds(119, 11, 156, 63);
+        lblAutores.setBounds(188, 14, 83, 63);
         getContentPane().add(lblAutores);
 
         JLabel lblBetsyPantaleon = new JLabel("Laysson Jamir Polo De La Cruz (i202225224)");
         lblBetsyPantaleon.setFont(new Font("Garamond", Font.PLAIN, 16));
-        lblBetsyPantaleon.setBounds(31, 108, 330, 26);
+        lblBetsyPantaleon.setBounds(85, 131, 288, 26);
         getContentPane().add(lblBetsyPantaleon);
 
         JLabel lblJuniorRodriguez = new JLabel("Mijael Jefferson Esquivel Almanza");
         lblJuniorRodriguez.setFont(new Font("Garamond", Font.PLAIN, 16));
-        lblJuniorRodriguez.setBounds(58, 145, 328, 26);
+        lblJuniorRodriguez.setBounds(117, 171, 224, 26);
         getContentPane().add(lblJuniorRodriguez);
 
         JLabel lblMelannyAtoche = new JLabel("Juan Sebastian Guzman Ramos");
         lblMelannyAtoche.setFont(new Font("Garamond", Font.PLAIN, 16));
-        lblMelannyAtoche.setBounds(68, 182, 328, 26);
+        lblMelannyAtoche.setBounds(131, 211, 197, 26);
         getContentPane().add(lblMelannyAtoche);
 
         btnCerrar = new JButton("Cerrar");
         btnCerrar.addActionListener(this);
         btnCerrar.setFont(new Font("Garamond", Font.PLAIN, 16));
-        btnCerrar.setBounds(108, 238, 91, 26);
+        btnCerrar.setBounds(184, 251, 91, 26);
         getContentPane().add(btnCerrar);
     }
 
